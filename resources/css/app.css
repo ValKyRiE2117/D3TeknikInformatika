@@ -15,7 +15,8 @@
     cite,
     span,
     tr,
-    td {
+    td,
+    li {
         font-family: "Plus Jakarta Sans";
     }
 }

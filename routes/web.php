@@ -13,3 +13,7 @@ Route::get('/akademik', function () {
 Route::get('/profile', function () {
     return view('profile');
 });
+
+Route::get('/alumni', function () {
+    return view('alumni');
+});
