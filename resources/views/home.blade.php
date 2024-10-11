@@ -1,4 +1,5 @@
-<x-layout     <section class="">
+<x-layout>     
+    <section class="">
         <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-8 lg:px-6">
             <div class="font-light text-gray-500 sm:text-lg">
                 <h1 class="mb-4 lg:text-5xl text-4xl  tracking-tight font-extrabold text-primary-700 text-center lg:text-start">Program Studi Teknik Informatika - D3</h1>
@@ -31,7 +32,7 @@
                     <dd class="font-light text-gray-500">Tenaga Pengajar</dd>
                 </div>
                 <div class="flex flex-col items-center justify-center">
-                    <dt class="text-4xl mb-0 md:mb-2 md:text-5xl  font-extrabold">200+</dt>
+                    <dt class="text-4xl mb-0 md:mb-2 md:text-5xl font-extrabold">200+</dt>
                     <dd class="font-light text-gray-500">Lulusan</dd>
                 </div>
             </div>

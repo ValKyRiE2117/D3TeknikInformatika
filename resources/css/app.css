@@ -16,7 +16,10 @@
     span,
     tr,
     td,
-    li {
+    li,
+    label,
+    button,
+    input {
         font-family: "Plus Jakarta Sans";
     }
 }

@@ -28,18 +28,23 @@
                     </ul>
                 </div>
             </div>
-            <div class="grid max-w-screen-xl gap-8 mx-auto text-white sm:grid-cols-3 bg-primary-600 p-8 rounded-lg">
-                <div class="flex flex-col items-center justify-center">
-                    <dd class="font-semibold text-gray-300 mb-3">Sekretaris</dd>
-                    <dt class=" text-2xl font-bold text-center">Daviena Dearestya Mahadewi</dt> 
-                </div>
+            <div class="grid max-w-screen-xl gap-2 mx-auto text-white md:grid-cols-4 bg-primary-600 p-8 rounded-lg items-start">
                 <div class="flex flex-col items-center justify-center">
                     <dd class="font-semibold text-gray-300 mb-3">Ketua Umum</dd>
                     <dt class=" text-2xl font-bold text-center">Umar Maulana</dt> 
                 </div>
                 <div class="flex flex-col items-center justify-center">
-                    <dd class="font-semibold text-gray-300 mb-3">Bendahara</dd>
+                    <dd class="font-semibold text-gray-300 mb-3">Sekretaris</dd>
+                    <dt class=" text-2xl font-bold text-center">Daviena Dearestya Mahadewi</dt> 
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                    <dd class="font-semibold text-gray-300 mb-3">Bendahara I</dd>
                     <dt class=" text-2xl font-bold text-center">Zikry Dwi Maulana</dt> 
+                    {{-- <dt class="text-4xl mb-2 md:text-2xl font-extrabold">Fisco Maulana</dt>  --}}
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                    <dd class="font-semibold text-gray-300 mb-3">Bendahara II</dd>
+                    <dt class=" text-2xl font-bold text-center">Fisco Maulana</dt> 
                     {{-- <dt class="text-4xl mb-2 md:text-2xl font-extrabold">Fisco Maulana</dt>  --}}
                 </div>
             </div>
@@ -50,10 +55,23 @@
             <div class="mx-auto max-w-screen-xl text-center lg:mb-16 mb-8">
                 <h2 class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-700 ">Program Kerja Himpunan Mahasiswa Diploma Teknik Informatika</h2>
             </div> 
-            <div class="grid gap-8 lg:grid-cols-3">
+            <div class="grid gap-8 lg:grid-cols-3 ma">
                 <a href="#" class="block">
                     <article class="p-6 bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-lg hover:bg-gray-100 transition duration-200">
                         <img class="h-auto max-w-full rounded-lg mb-6" src="{{asset('img/WLP.jpg')}}" alt="image description">
+                        {{-- <div class="flex justify-between items-center mb-5 text-gray-500">
+                            <span class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded">
+                                Tutorial
+                            </span>
+                            <span class="text-sm">14 days ago</span>
+                        </div> --}}
+                        <h3 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">How to quickly deploy a static website</h3>
+                        {{-- <p class="mb-5 font-light text-gray-500">Static websites are now used to bootstrap lots of websites and are becoming the basis</p> --}}
+                    </article>
+                </a>
+                <a href="#" class="block">
+                    <article class="p-6 bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-lg hover:bg-gray-100 transition duration-200">
+                        <img class="h-auto max-w-full rounded-lg mb-6" src="{{asset('img/uiux.jpg')}}" alt="image description">
                         {{-- <div class="flex justify-between items-center mb-5 text-gray-500">
                             <span class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded">
                                 Tutorial

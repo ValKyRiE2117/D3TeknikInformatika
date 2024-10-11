@@ -6,7 +6,7 @@
                         <img src="{{asset('img/logonondti.png')}}" class="h-32" alt="D3-TI Logo" />
                     </a>
             </div>
-            <ul class="space-y-4 text-gray-500 max-w-lg mb-6 lg:mb-0 mx-auto">
+            <ul class="space-y-4 text-gray-500 max-w-md mb-6 lg:mb-0 mx-auto">
                 <li class="flex items-start space-x-3 rtl:space-x-reverse text-gray-200">
                     <svg class="flex-shrink-0 w-7 h-7 text-gray-500" xmlns="http://www.w3.org/2000/svg"viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M11.906 1.994a8 8 0 0 1 8.09 8.421a8 8 0 0 1-1.297 3.957a1 1 0 0 1-.133.204l-.108.129q-.268.365-.573.699l-5.112 6.224a1 1 0 0 1-1.545 0L5.982 15.26l-.002-.002a18 18 0 0 1-.309-.38l-.133-.163a1 1 0 0 1-.13-.202a7.995 7.995 0 0 1 6.498-12.518ZM15 9.997a3 3 0 1 1-5.999 0a3 3 0 0 1 5.999 0" clip-rule="evenodd"/></svg>
                     <span class="text-sm">Jalan Imam Bonjol No. 207 & Jalan Nakula I No. 5 - 11 , Pendrikan Kidul, Kec. Semarang Tengah, Kota Semarang, Jawa Tengah, 50131</span>
@@ -20,7 +20,7 @@
                     <span class="text-sm">sekretariat@dinus.id</span>
                 </li>
             </ul>
-            <div class="grid grid-cols-1 gap-8 sm:gap-6 sm:grid-cols-1 text-center md:text-start">
+            <div class="text-center md:text-start lg:w-96 w-full">
                 <iframe class="rounded-lg w-full h-56" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d879.0586673328177!2d110.40887497712546!3d-6.982605302206721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708b4ec52229d7%3A0xc791d6abc9236c7!2sUniversitas%20Dian%20Nuswantoro!5e1!3m2!1sen!2sid!4v1728284043485!5m2!1sen!2sid" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
       </div>
