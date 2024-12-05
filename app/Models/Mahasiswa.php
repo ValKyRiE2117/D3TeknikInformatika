@@ -11,17 +11,30 @@ class Mahasiswa extends Model
 {
     use HasFactory;
 
-    protected static function booted()
-    {
-        // Membuat slug secara otomatis saat data mahasiswa dibuat
-        static::creating(function ($mahasiswa) {
-            // Buat slug dari nim atau atribut lain (misalnya nama)
-            $mahasiswa->slug_mhs = Str::slug($mahasiswa->nama_mhs);
-        });
+    protected $table = 'mahasiswa';
 
-        // Jika Anda ingin memperbarui slug saat nim di-update
-        static::updating(function ($mahasiswa) {
-            $mahasiswa->slug_mhs = Str::slug($mahasiswa->nama_mhs);
-        });
+    protected $fillable = [
+        'nim',
+        'nama_mhs',
+        'slug_mhs',
+        'status',
+        'dosen_wali',
+        'id_tahunajaran'
+    ];
+
+    public function nilai()
+    {
+        return $this->hasMany(Nilai::class, 'id_mhs');
+    }
+
+    public function dosenWali()
+    {
+        return $this->belongsTo(Dosen::class, 'dosen_wali'); // Assuming 'dosen_wali' is the foreign key
+    }
+
+    // Relationship to TahunAjaran
+    public function tahunAjaran()
+    {
+        return $this->belongsTo(TahunAjaran::class, 'id_tahunajaran');
     }
 }

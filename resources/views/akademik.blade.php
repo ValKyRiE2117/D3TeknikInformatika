@@ -53,90 +53,15 @@
                         </tr>
                     </thead>
                     <tbody>
+                        @foreach($matakuliah as $matkul)
                         <tr class="font-medium text-gray-900 whitespace-nowrap">
-                            <td>A22.53209</td>
-                            <td>PENGANTAR SISTEM OPERASI DAN JARINGAN KOMPUTER</td>
-                            <td>Teori</td>
-                            <td>3</td>
-                            <td>1</td>
+                            <td>{{ $matkul->kode_matkul }}</td>
+                            <td>{{ $matkul->nama_matkul }}</td>
+                            <td>{{ $matkul->jenis }}</td>
+                            <td>{{ $matkul->sks }}</td>
+                            <td>{{ $matkul->semester }}</td>
                         </tr>
-                        <tr class="font-medium text-gray-900 whitespace-nowrap">
-                            <td>A22.53201</td>
-                            <td>PEMROGRAMAN WEB I</td>
-                            <td>Praktek</td>
-                            <td>4</td>
-                            <td>2</td>
-                        </tr>
-                        <tr class="font-medium text-gray-900 whitespace-nowrap">
-                            <td>A22.53201</td>
-                            <td>PEMROGRAMAN WEB I</td>
-                            <td>Praktek</td>
-                            <td>4</td>
-                            <td>2</td>
-                        </tr>
-                        <tr class="font-medium text-gray-900 whitespace-nowrap">
-                            <td>A22.53209</td>
-                            <td>PENGANTAR SISTEM OPERASI DAN JARINGAN KOMPUTER</td>
-                            <td>Teori</td>
-                            <td>3</td>
-                            <td>1</td>
-                        </tr>
-                        <tr class="font-medium text-gray-900 whitespace-nowrap">
-                            <td>A22.53201</td>
-                            <td>PEMROGRAMAN WEB I</td>
-                            <td>Praktek</td>
-                            <td>4</td>
-                            <td>2</td>
-                        </tr>
-                        <tr class="font-medium text-gray-900 whitespace-nowrap">
-                            <td>A22.53209</td>
-                            <td>PENGANTAR SISTEM OPERASI DAN JARINGAN KOMPUTER</td>
-                            <td>Teori</td>
-                            <td>3</td>
-                            <td>1</td>
-                        </tr>
-                        <tr class="font-medium text-gray-900 whitespace-nowrap">
-                            <td>A22.53201</td>
-                            <td>PEMROGRAMAN WEB I</td>
-                            <td>Praktek</td>
-                            <td>4</td>
-                            <td>2</td>
-                        </tr>
-                        <tr class="font-medium text-gray-900 whitespace-nowrap">
-                            <td>A22.53209</td>
-                            <td>PENGANTAR SISTEM OPERASI DAN JARINGAN KOMPUTER</td>
-                            <td>Teori</td>
-                            <td>3</td>
-                            <td>1</td>
-                        </tr>
-                        <tr class="font-medium text-gray-900 whitespace-nowrap">
-                            <td>A22.53201</td>
-                            <td>PEMROGRAMAN WEB I</td>
-                            <td>Praktek</td>
-                            <td>4</td>
-                            <td>2</td>
-                        </tr>
-                        <tr class="font-medium text-gray-900 whitespace-nowrap">
-                            <td>A22.53209</td>
-                            <td>PENGANTAR SISTEM OPERASI DAN JARINGAN KOMPUTER</td>
-                            <td>Teori</td>
-                            <td>3</td>
-                            <td>1</td>
-                        </tr>
-                        <tr class="font-medium text-gray-900 whitespace-nowrap">
-                            <td>A22.53201</td>
-                            <td>PEMROGRAMAN WEB I</td>
-                            <td>Praktek</td>
-                            <td>4</td>
-                            <td>2</td>
-                        </tr>
-                        <tr class="font-medium text-gray-900 whitespace-nowrap">
-                            <td>A22.53209</td>
-                            <td>PENGANTAR SISTEM OPERASI DAN JARINGAN KOMPUTER</td>
-                            <td>Teori</td>
-                            <td>3</td>
-                            <td>1</td>
-                        </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>  

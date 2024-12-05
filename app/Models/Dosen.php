@@ -13,16 +13,25 @@ class Dosen extends Authenticatable
     use HasFactory, Notifiable;
 
     protected $table = 'dosen';
+    public $timestamps = true;
+    // If you are using custom column names for created_at and updated_at
+    const CREATED_AT = 'created_at';
+    const UPDATED_AT = 'updated_at';
+
+    public function mahasiswa()
+    {
+        return $this->hasMany(Mahasiswa::class, 'dosen_wali');
+    }
+
 
     // The attributes that are mass assignable
     protected $fillable = [
         'nama_dosen',
         'slug_dosen',
         'npp',
-        'alamat_dosen',
-        'telp_dosen',
         'email_dosen',
         'password_dosen',
+        'role'
     ];
 
     // The attributes that should be hidden for arrays (e.g., password)
@@ -39,5 +48,9 @@ class Dosen extends Authenticatable
     public function getAuthPassword()
     {
         return $this->password_dosen;
+    }
+    public function getRole()
+    {
+        return $this->role;
     }
 }

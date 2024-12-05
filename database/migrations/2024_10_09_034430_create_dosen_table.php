@@ -14,12 +14,10 @@ return new class extends Migration
         Schema::create('dosen', function (Blueprint $table) {
             $table->id(); // Primary key
             $table->string('nama_dosen'); // Name of the lecturer
-            $table->string('slug_dosen'); // Slug for the lecturer's name
             $table->string('npp')->unique(); // Lecturer's NPP (unique identifier)
-            $table->string('alamat_dosen'); // Address of the lecturer
-            $table->string('telp_dosen'); // Phone number of the lecturer
             $table->string('email_dosen'); // Phone number of the lecturer
             $table->string('password_dosen'); // Phone number of the lecturer
+            $table->enum('role', ['kaprodi', 'dosen'])->default('dosen');
             $table->timestamps(); // Created and updated timestamps
         });
     }
